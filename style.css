@@ -1,0 +1,297 @@
+/* mung ngo ngerubah warna */
+:root{
+    --blue:#47B5FF;
+    --navy:#1363DF;
+}
+
+/* keseluruhan berubah */
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* full html */
+html{
+    font-size: 70%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* semua section */
+section{
+    padding: 2rem 7%;
+}
+
+/* tombol */
+.isi .btn{
+    display: inline-block;
+    border-radius: 3rem;
+    background: var(--navy);
+    color: #ffff;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 8px;
+}
+
+/* hover e tombol */
+.btn:hover{
+    background: var(--blue);
+    scale: 1.2;
+}
+
+/* header */
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #ffff;
+    padding: 2rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999999999;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bolder;
+}
+
+header .logo:hover{
+    scale: 1.2;
+    color: var(--blue);
+}
+
+header .logo span{
+    color: var(--blue);
+}
+
+/* navigator panel */
+header .nav a{
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color: #333;
+}
+
+header .nav a:hover{
+    color: #222;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* main */
+
+/* section pertama */
+.home{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.isi h1{
+    color: white;
+    font-size: 10rem;
+}
+
+.isi span{
+    color: var(--blue);
+}
+
+.isi p{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.isi p span{
+    color: var(--blue);
+}
+
+/* about section */
+.about{
+    padding: 2rem 7%;
+}
+
+.bout{
+    color: #333;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1.8rem;
+    padding: 10px;
+    margin-bottom: 1.7rem;
+}
+
+.garis{
+    height: 7px;
+    width: 20%;
+    background-color: var(--blue);
+    margin: 0 auto;
+}
+
+.texbout{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.texbout img{
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.texbout p{
+    font-size: 1.5rem;
+    padding: 3rem 5%;
+    text-align: justify;
+}
+
+/* dunia hewan */
+.content{
+    background-image: url(./4.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+.duwan{
+    color: #fff;
+    font-size: 5rem;
+    text-align: left;
+    margin-top: 1.8rem;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    margin-left: 4rem;
+}
+
+.gariss{
+    height: 7px;
+    width: 20%;
+    background-color: var(--blue);
+    margin-left: 5.3rem;
+    margin-bottom: 1rem;
+}
+
+.texwan p{
+    font-size: 1.5rem;
+    padding: 2rem 5%;
+    text-align: justify;
+    color: white;
+    width: 67%;
+}
+
+.texwan span{
+    color: var(--blue);
+}
+
+/* tombol read more */
+.content .btn{
+    display: inline-block;
+    border-radius: 3rem;
+    background: var(--navy);
+    color: #ffff;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 5rem;
+}
+
+/* klasifikasi */
+.artikel{
+    background-color: #eee;
+}
+
+.klas{
+    color: #333;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1.8rem;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* kotak-kotak */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    position: relative;
+    background-color: #fff;
+}
+
+.container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.container .box .image img{
+    height: 25rem;
+}
+
+.container .box .image .icon{
+    position: absolute;
+    bottom: -7rem;left: 0;right: 0;
+    display: flex;
+}
+
+.container .box:hover .image .icon{
+    bottom: 0;
+}
+
+.container .box .image .icon a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--blue);
+    color: #fff;
+}
+
+.container .box .image .icon .tengah{
+    border-left: 1rem solid #eee;
+    border-right: 1rem solid #eee;
+    width: 100%;
+}
+
+.container .box .image .icon a:hover{
+    background: #333;
+}
+
+.container .box .isinya{
+    
+}
+
+/* @media (prefers-color-scheme: dark) {
+    html {
+        background-color: #444;
+    }
+} */
